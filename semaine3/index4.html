@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnet de tâches</title>
+<script src="script4.js"></script>
+
+
+</head>
+<body>
+
+<main class="sheet">
+  <header>
+    <h1>Carnet de tâches</h1>
+    <p class="subtitle">Tout reste ici, même après rafraîchissement.</p>
+  </header>
+
+  <form id="task-form">
+    <input
+      type="text"
+      id="task-input"
+      placeholder="Écrire une tâche…"
+      autocomplete="off"
+      maxlength="200"
+      aria-label="Nouvelle tâche"
+    >
+    <button type="submit" id="add-btn">Ajouter</button>
+  </form>
+
+  <ul id="task-list"></ul>
+
+  <footer>
+    <span id="count-label">0 tâche</span>
+    <button id="clear-done" type="button">Effacer les terminées</button>
+  </footer>
+</main>
+
+</body>
+</html>
